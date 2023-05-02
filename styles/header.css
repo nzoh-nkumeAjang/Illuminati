@@ -1,0 +1,259 @@
+/* First head banner styles starts*/
+#connect{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  background: #131212;
+  opacity: .5;
+  align-items: center;
+}
+#connect .sect{
+  padding: 10px 40px;
+}
+#connect .social i{
+  color: #fff;
+}
+#connect .info{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+#connect .info .number,
+#connect .info .email{
+  text-decoration: none;
+  color: #fff;
+  padding-left: 30px;
+  transition: .3s ease;
+}
+#connect .info :where(.number, .email):hover{
+  color: #770808;
+}
+#connect .social i{
+  color: #fff;
+  padding: 6px 7px;
+  margin: 5px;
+  border: 1px solid #fff;
+  transition: .3s ease;
+  background-color: auto;
+}
+#connect .social i:hover{
+  color: #770808;
+  border: 1px solid #770808;
+}
+/* First head banner styles ends*/
+
+/* header styles starts*/
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 80px;
+  background-color: #770808;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  height: 60px;
+  display: flex;
+}
+.links{
+  padding-left: 40px;
+}
+#navbar li{
+  list-style: none;
+  padding: 0 10px;
+  position: relative;
+}
+#navbar li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3 ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+  color: crimson;
+  transition: .3s;
+}
+#mobile {
+  display: none;
+  align-items: center;
+}
+#close{
+  display: none;
+}
+/* header styles ends */
+
+/* Start Media Query */
+@media (max-width:1200px){
+  /* navbar styles starts */
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: auto;
+    background-color: #131212;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+    padding: 50px 0 0 30px;
+    transition: 0.3s;
+    opacity: .8;
+    border: 1px solid #000;
+  }
+  #navbar.active{
+    right: 0px;
+  }
+  #navbar li{
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+  }
+  #mobile {
+   display: flex;
+   align-items: center;
+  }
+  #mobile i{
+    color: #000;
+    font-size: 24px;
+    padding-left: 12px;
+    display: flex;
+  }
+  #close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: crimson;
+    font-size: 24px;
+  }
+  /* navbar styles ends */
+
+  /* header styles starts*/
+
+  /* .logo{
+    height: 55px;
+    display: flex;
+  }
+  .links{
+    padding: 15px 0;
+  }
+  #navbar li a{
+    font-size: 20px;
+  }
+  /* header styles ends */
+}
+@media (max-width:799px) {   
+  /* header styles starts*/
+  #header{
+    padding: 20px 20px;
+  }
+  .logo{
+    height: 50px;
+  }
+  .links{
+    padding: 10px 0;
+  }
+  #navbar li{
+    padding: 0 5px;
+  }
+  #navbar li a{
+    font-size: 18px;
+  }
+  /* header styles ends */
+}
+@media (max-width:477px) {
+  /* navbar styles starts */
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 18px;
+    right: -100%;
+    width: 250px;
+    height: auto;
+    background-color: #131212;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+    padding: 50px 0 0 30px;
+    transition: 0.4s;
+  }
+  #navbar.active{
+    right: 18px;
+  }
+  #navbar li{
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+  }
+  #mobile {
+   display: flex;
+   align-items: center;
+  }
+  #mobile i{
+    color: #000;
+    font-size: 24px;
+    padding-left: 12px;
+    display: flex;
+  }
+  #close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: crimson;
+    font-size: 24px;
+  }
+  #header{
+    padding: 10px 30px;
+  }
+  /* navbar styles ends */
+}
+@media (max-width:320px) {
+  .logo{
+    justify-content: center;
+  }
+}
+@media (max-width: 490px) {
+  /* First head banner styles starts*/
+  #connect{
+    padding: 10px;
+    justify-content: space-between;
+  }
+  #connect .sect{
+    padding: 10px 20px;
+    font-size: 90%;
+  }
+  #connect .info{
+    padding-left: 10px;
+  }
+  #connect .info .number,
+  #connect .info .email{
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #connect .social{
+    display: flex;
+  }
+  /* First head banner styles ends*/
+}
+
+

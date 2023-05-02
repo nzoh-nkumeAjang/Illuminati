@@ -1,0 +1,213 @@
+/* contact styles starts*/
+#contact{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 80px;
+  background-image:url(/assets/img/banner/small-banner/banner\ \(14\).jpeg);
+  margin: 20px 0px 20px 0px;
+}
+#contact .contact-info{
+  width: 50%;
+  height: 60%;
+  margin: 0px 10px;
+  background: #000;
+  padding: 20px;
+  box-shadow: 20px 30px 40px rgba(0, 0, 0, 0.06);
+}
+#contact .contact-info img{
+  width: 100%;
+  padding: 4px;
+  height: 350px;
+}
+#contact .contact-info p{
+  width: 100%;
+  padding:0 20px;
+  line-height: 24px;
+  font-size: 18px;
+  color: #fff;
+}
+#contact .contact-info h1{
+  color: #fff;
+  background: #770808;
+  padding: 40px 20px;
+  font-size: 20px;
+}
+#contact .form{
+  display: flex;
+  width: 50%;
+  background: #000;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#contact .form form{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  padding: 20px;
+}
+#contact .form form h1{
+  color: crimson;
+  font-size: 50px;
+  font-weight: 800;
+  padding: 20px;
+}
+#contact .form form .info{
+  display: flex;
+  width: 620px;
+}
+#contact .form form input,
+#contact .form form textarea,
+#contact .form form button{
+  padding: 18px;
+  margin: 10px;
+  width: 100%;
+}
+#contact .form form input::placeholder,
+#contact .form form textarea::placeholder{
+  color: crimson;
+}
+#contact .form h2{
+  color: crimson;
+  padding: 15px 20px;
+  font-size: 30px;
+}
+#contact .form form input{
+  padding: 15px;
+  font-size: 15px;
+  color: crimson;
+  border: 1px solid #666;
+  background: #2e2a2a;
+}
+#contact .form form textarea{
+  font-size: 15px;
+  color: crimson;
+  border: 1px solid #666;
+  background: #2e2a2a;
+}
+#contact .form .btn{
+  width: 30%;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 15px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #770808;
+  transition: .3s ease;
+  margin-bottom: 0;
+}
+#contact .form .btn:hover{
+  color: #fff;
+  background-color: #770808;
+  border: none;
+}
+/* contact styles ends*/
+
+/* Start Media Query */
+@media (max-width:1260px){
+  #contact .contact-info h1{
+    display: none;
+  }
+}
+@media (max-width:1024px){
+  /* contact styles starts */
+  #contact .form .btn{
+    width: 50%;
+  }
+  #contact .contact-info h1{
+    display: none;
+  }
+  /* contact styles ends */
+}
+@media (max-width:799px) {
+  /* contact styles starts */
+  #contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  #contact .contact-info{
+    width: 100%;
+    height: 60%;
+    margin:5px 0;
+    padding: 15px;
+  }
+  #contact .contact-info img{
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+  #contact .contact-info p{
+    width: 100%;
+    padding:0 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #contact .contact-info h1{
+    display: block;
+    padding: 40px 20px;
+    font-size: 18px;
+  }
+  #contact .form{
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+  }
+  #contact .form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 20px;
+  }
+  #contact .form form .info{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+  }
+  #contact .form form h1{
+    width: 100%;
+    font-size: 36px;
+    padding: 20px;
+  }
+  #contact .form form input,
+  #contact .form select,
+  #contact .form form textarea,
+  #contact .form form button{
+    padding: 8px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  #contact .form h2{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 28px;
+  }
+  #contact .form form input,
+  #contact .form select{
+    padding: 15px;
+    font-size: 15px;
+  }
+  #contact .form form textarea{
+    font-size: 15px;
+  }
+  #contact .form .btn{
+    width: 100%;
+    min-width: 100%;
+    font-size: 14px;
+    border-radius: 0;
+  }
+  /*contact styles ends*/
+}
+@media (max-width:477px) {
+  /*contact page*/
+  #contact .contact-info h1{
+    display: none;
+  }
+}
+
+
+

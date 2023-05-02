@@ -1,0 +1,51 @@
+/* contact styles starts*/
+#contact .form form .info{
+  display: flex;
+  width: 535px;
+}
+#contact .form h2{
+  color: crimson;
+  padding: 15px 20px;
+  font-size: 30px;
+}
+#contact .form form h3{
+  padding-left: 10px;
+  color: #fff;
+}
+#contact .form form input{
+  padding: 15px;
+  font-size: 15px;
+  color: crimson;
+  border: 1px solid #666;
+  background: #2e2a2a;
+}
+#contact .form form textarea{
+  font-size: 15px;
+  color: crimson;
+  border: 1px solid #666;
+  background: #2e2a2a;
+}
+/* contact styles ends*/
+
+/* Start Media Query */
+@media (max-width:799px) {
+  #contact .form form .info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #contact .form form .info input{
+    margin-left: 0;
+  }
+}
+@media (max-width:477px) {
+  #contact .contact-info h1{
+    display: none;
+  } 
+  #contact .form form h3{
+    padding-left: 0px;
+  }
+}
+
+
+
