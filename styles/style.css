@@ -64,6 +64,7 @@ section{
 #hero{
   height: 80vh;
   width: 100%;
+  background-image: url(/img/img.jpg);
   background-size: cover;
   background-position: top 25% right 0;
   padding: 0 80px;
